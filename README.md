@@ -1,16 +1,17 @@
 # MS_Soldering_Station
 Modular Soldering Station project by TA1AYH & TA2PLT
 
-Hi, with this module you can
+Hi, with this module you can;
 - select the target temperature of solder (auto PWM),
 - select the sleep time period from menu,
 - select sleep PWM limit (when auto PWM drops below this value, sleep time counter starts, when it drops 0:0 the soldering station heater starts to sleep)
 - control sleep function. it starts to work when auto pwm drops to below the limit pwm (after heater temperature reach target temperature on the auto PWM),
 - control IR sensivity to wake up the heater to reach the target temperature or reset the sleep timer,
 - select supply voltage input (18-20-24v DC), ********* do not use more than 24v DC when using single DC input to the board *************
-- set the max user temerature ( if this temperature reach with your temerature setting, it automatically sets -5 degrees celcius below the max user temperature),
+- set the max user temperature ( if this temperature reach with your temerature setting, it automatically sets -5 degrees celcius below the max user temperature),
 - set firmware Max protection temperature with the arduino code( if the system accidently reach this temperature, target temperature will set the 0 to protect the heater)
 - selecet the user interface in two types of screen (graphic and windowed modes)
+- auto reset function allows you to reset the sleep timer (when you do not use solder it starts to count down the timer, if you start use solder, auto PWM sens and increase the PWM to keep target temperature, and it resets the timer)
 
 enjoy the project, 
 73's
