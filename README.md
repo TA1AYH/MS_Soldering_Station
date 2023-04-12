@@ -13,6 +13,8 @@ Hi, with this module you can;
 - selecet the user interface in two types of screen (graphic and windowed modes)
 - auto reset function allows you to reset the sleep timer (when you do not use solder it starts to count down the timer, if you start use solder, auto PWM sens and increase the PWM to keep target temperature, and it resets the timer)
 
+For auto reset fuction i wrote own temperature control logic (standart PID temperature control codes for arduino not allowing this function).  
+
 enjoy the project, 
 73's
 
