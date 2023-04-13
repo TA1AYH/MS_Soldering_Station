@@ -8,12 +8,12 @@ Hi, with this module you can;
 - control sleep function. it starts to work when auto pwm drops to below the limit pwm (after heater temperature reach target temperature on the auto PWM),
 - control IR sensivity to wake up the heater to reach the target temperature or reset the sleep timer,
 - select supply voltage input (18-20-24v DC), ********* do not use more than 24v DC when using single DC input to the board *************
-- set the max user temperature ( if this temperature reach with your temerature setting, it automatically sets -5 degrees celcius below the max user temperature),
-- set firmware Max protection temperature with the arduino code( if the system accidently reach this temperature, target temperature will set the 0 to protect the heater)
-- selecet the user interface in two types of screen (graphic and windowed modes)
+- set the max user temperature ( if this temperature reach with your temperature setting, it automatically sets -5 degrees celcius below the max user temperature),
+- set firmware Max protection temperature with the arduino code( if the system reach this temperature, target temperature will set the 0 to protect the heater)
+- select the user interface in two types of screen (graphic and windowed modes)
 - auto reset function allows you to reset the sleep timer (when you do not use solder it starts to count down the timer, if you start use solder, auto PWM sens and increase the PWM to keep target temperature, and it resets the timer)
 
-For auto reset fuction i wrote own temperature control logic (standart PID temperature control codes for arduino not allowing this function).  
+For auto reset fuction i wrote own temperature control logic to get stable PWM flow (standart PID temperature control codes for arduino not allowing sleep function because PWM in not stable on standart PID logic).  
 
 enjoy the project, 
 73's
